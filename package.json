@@ -1,22 +1,58 @@
 {
   "name": "noak-template",
+  "version": "1.0.0",
+  "author": "Jonathan Corral <contact@jonathan-corral.fr>",
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "noak",
+    "next.js"
+  ],
+  "homepage": "https://github.com/j-corral/noak-template",
+  "repository": "git+https://github.com/j-corral/noak-template.git",
   "private": true,
+  "eslintConfig": {
+    "extends": [
+      "plugin:@next/next/recommended"
+    ],
+    "ignorePatterns": [
+      "generated"
+    ],
+    "rules": {
+      "jsx-a11y/anchor-is-valid": [
+        "off"
+      ]
+    }
+  },
+  "lint-staged": {
+    "*.{js,json,md}": [
+      "prettier --write"
+    ],
+    "**/*.{js,jsx,ts,tsx}": [
+      "eslint --fix"
+    ]
+  },
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 3030",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "check:types": "tsc --noEmit",
+    "validate": "yarn lint && yarn check:types"
   },
   "dependencies": {
-    "next": "12.0.4",
-    "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest"
   },
   "devDependencies": {
     "@types/node": "16.11.9",
     "@types/react": "17.0.36",
     "eslint": "7",
     "eslint-config-next": "12.0.4",
+    "prettier": "^2.4.1",
+    "tslint": "^6.1.3",
+    "tslint-config-prettier": "^1.18.0",
     "typescript": "4.5.2"
   }
 }
