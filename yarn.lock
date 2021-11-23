@@ -1355,6 +1355,22 @@
   resolved "https://registry.yarnpkg.com/@hapi/hoek/-/hoek-9.2.1.tgz#9551142a1980503752536b5050fd99f4a7f13b17"
   integrity sha512-gfta+H8aziZsm8pZa0vj04KO6biEiisppNgA1kbJvFrrWu9Vm7eaUEy76DIxsuTaWvti5fkJVhllWc6ZTE+Mdw==
 
+"@hoomies/noak.types.app@^0.0.1":
+  version "0.0.1"
+  resolved "https://node.bit.dev/@hoomies/noak.types.app/-/@hoomies-noak.types.app-0.0.1.tgz#8933819e5436685038df7e5756fac17c1c5f6f9e"
+  integrity sha1-iTOBnlQ2aFA4335XVvrBfBxfb54=
+  dependencies:
+    "@hoomies/noak.types.component" "0.0.1"
+    core-js "^3.0.0"
+    next latest
+
+"@hoomies/noak.types.component@0.0.1":
+  version "0.0.1"
+  resolved "https://node.bit.dev/@hoomies/noak.types.component/-/@hoomies-noak.types.component-0.0.1.tgz#dd45854f5f6d827ccda0c2c8611cb2eec5006817"
+  integrity sha1-3UWFT19tgnzNoMLIYRyy7sUAaBc=
+  dependencies:
+    core-js "^3.0.0"
+
 "@hoomies/unagui.theme.wrapper@^0.0.4":
   version "0.0.4"
   resolved "https://node.bit.dev/@hoomies/unagui.theme.wrapper/-/@hoomies-unagui.theme.wrapper-0.0.4.tgz#48d51e70ffb00724b35bd2b96c45b74c42a8b8ec"
