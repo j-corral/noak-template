@@ -46,10 +46,11 @@
     "@emotion/react": "^11.6.0",
     "@emotion/server": "^11.4.0",
     "@emotion/styled": "^11.6.0",
-    "@hoomies/noak.types.app": "^0.0.1",
+    "@hoomies/noak.layouts.root": "^0.0.1",
+    "@hoomies/noak.types.next": "^0.0.4",
     "@hoomies/unagui.theme.wrapper": "^0.0.4",
     "framer-motion": "^5.3.1",
-    "next": "latest",
+    "next": "^12.0.4",
     "react": "latest",
     "react-dom": "latest"
   },

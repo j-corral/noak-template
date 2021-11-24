@@ -797,7 +797,7 @@
     "@chakra-ui/utils" "1.8.4"
     "@chakra-ui/visually-hidden" "1.0.16"
 
-"@chakra-ui/react@^1.7.2":
+"@chakra-ui/react@1.7.2", "@chakra-ui/react@^1.7.2":
   version "1.7.2"
   resolved "https://registry.yarnpkg.com/@chakra-ui/react/-/react-1.7.2.tgz#7613f33d4adc2384d2fa8675cb6e94780e5c4cbe"
   integrity sha512-2RxJHqYLSSB/dQQ9M4APxMopPfsU89A++63v8U8jiR7J8sUaa6Ded9ypTiIUY09J8v7mJAus4/ZSJxG7Zfd7aA==
@@ -1355,21 +1355,23 @@
   resolved "https://registry.yarnpkg.com/@hapi/hoek/-/hoek-9.2.1.tgz#9551142a1980503752536b5050fd99f4a7f13b17"
   integrity sha512-gfta+H8aziZsm8pZa0vj04KO6biEiisppNgA1kbJvFrrWu9Vm7eaUEy76DIxsuTaWvti5fkJVhllWc6ZTE+Mdw==
 
-"@hoomies/noak.types.app@^0.0.1":
+"@hoomies/noak.layouts.root@0.0.1", "@hoomies/noak.layouts.root@^0.0.1":
   version "0.0.1"
-  resolved "https://node.bit.dev/@hoomies/noak.types.app/-/@hoomies-noak.types.app-0.0.1.tgz#8933819e5436685038df7e5756fac17c1c5f6f9e"
-  integrity sha1-iTOBnlQ2aFA4335XVvrBfBxfb54=
+  resolved "https://node.bit.dev/@hoomies/noak.layouts.root/-/@hoomies-noak.layouts.root-0.0.1.tgz#6e1c6821fe6c8b5a69d083b89aacd31fca29a040"
+  integrity sha1-bhxoIf5si1pp0IO4mqzTH8opoEA=
   dependencies:
-    "@hoomies/noak.types.component" "0.0.1"
+    "@chakra-ui/react" "1.7.2"
     core-js "^3.0.0"
-    next latest
+    next "^12.0.4"
 
-"@hoomies/noak.types.component@0.0.1":
-  version "0.0.1"
-  resolved "https://node.bit.dev/@hoomies/noak.types.component/-/@hoomies-noak.types.component-0.0.1.tgz#dd45854f5f6d827ccda0c2c8611cb2eec5006817"
-  integrity sha1-3UWFT19tgnzNoMLIYRyy7sUAaBc=
+"@hoomies/noak.types.next@^0.0.4":
+  version "0.0.4"
+  resolved "https://node.bit.dev/@hoomies/noak.types.next/-/@hoomies-noak.types.next-0.0.4.tgz#e249f70460e391c70d5744866aebdb0452ff1716"
+  integrity sha1-4kn3BGDjkccNV0SGauvbBFL/FxY=
   dependencies:
+    "@hoomies/noak.layouts.root" "0.0.1"
     core-js "^3.0.0"
+    next "^12.0.4"
 
 "@hoomies/unagui.theme.wrapper@^0.0.4":
   version "0.0.4"
@@ -3535,7 +3537,7 @@ natural-compare@^1.4.0:
   resolved "https://registry.yarnpkg.com/natural-compare/-/natural-compare-1.4.0.tgz#4abebfeed7541f2c27acfb29bdbbd15c8d5ba4f7"
   integrity sha1-Sr6/7tdUHywnrPspvbvRXI1bpPc=
 
-next@latest:
+next@^12.0.4:
   version "12.0.4"
   resolved "https://registry.yarnpkg.com/next/-/next-12.0.4.tgz#096578b320f0faf0bd51798decb39aaf00052efe"
   integrity sha512-1pvjcSZBm5OLoGmDhp4JwKwIE798WbqUNLuyU7w6a2jUkdWaxOYtkE/ROXQTi2pXHj7+6rm68AvhxROLX2NHQg==

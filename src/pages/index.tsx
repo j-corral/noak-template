@@ -1,4 +1,4 @@
-import type { NextPage } from 'next';
+import type { NextPage } from '@hoomies/noak.types.next';
 import Head from 'next/head';
 import Image from 'next/image';
 
@@ -8,6 +8,6 @@ const Home: NextPage = () => {
   return <></>;
 };
 
-//Home.layout = CustomLayout;
+Home.pageLayout = CustomLayout;
 
 export default Home;

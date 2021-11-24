@@ -2,23 +2,26 @@ import React from 'react';
 
 import '../styles/globals.css';
 import { Wrapper } from '@hoomies/unagui.theme.wrapper';
-import { AppProps } from '@hoomies/noak.types.app';
+import { AppProps } from '@hoomies/noak.types.next';
+import { RootLayout } from '@hoomies/noak.layouts.root';
 
 import theme from '~theme';
-import RootLayout from '~layouts/Root';
-import DefaultLayout from '~layouts/Default';
+import DefaultPageLayout from '~layouts/page/Default';
+
+import DefaultHeader from '~components/header/Default';
+import DefaultFooter from '~components/footer/Default';
 
 function MyApp({ Component, pageProps }: AppProps) {
-  const DynamicLayout = React.useMemo(() => {
-    return Component.layout ?? DefaultLayout;
-  }, [Component.layout]);
+  const PageLayout = React.useMemo(() => {
+    return Component.pageLayout ?? DefaultPageLayout;
+  }, [Component.pageLayout]);
 
   return (
-    <Wrapper resetCSS theme={theme}>
-      <RootLayout>
-        <DynamicLayout>
+    <Wrapper resetCSS={true} theme={theme}>
+      <RootLayout header={<DefaultHeader />} footer={<DefaultFooter />} {...Component.rootProps}>
+        <PageLayout>
           <Component {...pageProps} />
-        </DynamicLayout>
+        </PageLayout>
       </RootLayout>
     </Wrapper>
   );
