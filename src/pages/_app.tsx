@@ -4,8 +4,8 @@ import { Wrapper } from '@hoomies/unagui.theme.wrapper';
 import { AppProps as CustomAppProps } from '@hoomies/noak.types.next';
 import { RootLayout } from '@hoomies/noak.layouts.root';
 import { PageLayout as DefaultPageLayout } from '@hoomies/noak.layouts.page.default';
-import {Header} from '@hoomies/unagui.components.header';
-import {Footer} from '@hoomies/unagui.components.footer';
+import { Header } from '@hoomies/unagui.components.header';
+import { Footer } from '@hoomies/unagui.components.footer';
 
 import '../styles/globals.css';
 import theme from '~theme';
