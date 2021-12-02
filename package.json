@@ -46,13 +46,17 @@
     "@emotion/react": "^11.6.0",
     "@emotion/server": "^11.4.0",
     "@emotion/styled": "^11.6.0",
-    "@hoomies/noak.layouts.root": "^0.0.1",
+    "@hoomies/noak.layouts.page.default": "^0.0.1",
+    "@hoomies/noak.layouts.root": "^0.0.2",
     "@hoomies/noak.types.next": "^0.0.4",
+    "@hoomies/unagui.components.footer": "^0.0.1",
+    "@hoomies/unagui.components.header": "^0.0.1",
     "@hoomies/unagui.theme.wrapper": "^0.0.4",
     "framer-motion": "^5.3.1",
     "next": "^12.0.4",
     "react": "latest",
-    "react-dom": "latest"
+    "react-dom": "latest",
+    "uuid": "^8.3.2"
   },
   "devDependencies": {
     "@types/node": "16.11.9",

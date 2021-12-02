@@ -1355,10 +1355,27 @@
   resolved "https://registry.yarnpkg.com/@hapi/hoek/-/hoek-9.2.1.tgz#9551142a1980503752536b5050fd99f4a7f13b17"
   integrity sha512-gfta+H8aziZsm8pZa0vj04KO6biEiisppNgA1kbJvFrrWu9Vm7eaUEy76DIxsuTaWvti5fkJVhllWc6ZTE+Mdw==
 
-"@hoomies/noak.layouts.root@0.0.1", "@hoomies/noak.layouts.root@^0.0.1":
+"@hoomies/noak.layouts.page.default@^0.0.1":
+  version "0.0.1"
+  resolved "https://node.bit.dev/@hoomies/noak.layouts.page.default/-/@hoomies-noak.layouts.page.default-0.0.1.tgz#06c195ad5c5f1a98e92ef1ec2857f5f1918ca983"
+  integrity sha1-BsGVrVxfGpjpLvHsKFf18ZGMqYM=
+  dependencies:
+    "@chakra-ui/react" "1.7.2"
+    core-js "^3.0.0"
+
+"@hoomies/noak.layouts.root@0.0.1":
   version "0.0.1"
   resolved "https://node.bit.dev/@hoomies/noak.layouts.root/-/@hoomies-noak.layouts.root-0.0.1.tgz#6e1c6821fe6c8b5a69d083b89aacd31fca29a040"
   integrity sha1-bhxoIf5si1pp0IO4mqzTH8opoEA=
+  dependencies:
+    "@chakra-ui/react" "1.7.2"
+    core-js "^3.0.0"
+    next "^12.0.4"
+
+"@hoomies/noak.layouts.root@^0.0.2":
+  version "0.0.2"
+  resolved "https://node.bit.dev/@hoomies/noak.layouts.root/-/@hoomies-noak.layouts.root-0.0.2.tgz#17d3b8287713fb2d67059d295ea70f4f9d4a9c7e"
+  integrity sha1-F9O4KHcT+y1nBZ0pXqcPT51KnH4=
   dependencies:
     "@chakra-ui/react" "1.7.2"
     core-js "^3.0.0"
@@ -1372,6 +1389,50 @@
     "@hoomies/noak.layouts.root" "0.0.1"
     core-js "^3.0.0"
     next "^12.0.4"
+
+"@hoomies/unagui.components.boxer@0.0.2":
+  version "0.0.2"
+  resolved "https://node.bit.dev/@hoomies/unagui.components.boxer/-/@hoomies-unagui.components.boxer-0.0.2.tgz#cc208c0f5bbe65e43f985fe2ed8cfaeb83380ab1"
+  integrity sha1-zCCMD1u+ZeQ/mF/i7Yz664M4CrE=
+  dependencies:
+    "@chakra-ui/react" "1.6.12"
+    core-js "^3.0.0"
+
+"@hoomies/unagui.components.copyright@0.0.1":
+  version "0.0.1"
+  resolved "https://node.bit.dev/@hoomies/unagui.components.copyright/-/@hoomies-unagui.components.copyright-0.0.1.tgz#b5f78f7d3e85df050b2c9b70c0a0db5d335b37c0"
+  integrity sha1-tfePfT6F3wULLJtwwKDbXTNbN8A=
+  dependencies:
+    "@chakra-ui/react" "1.6.12"
+    core-js "^3.0.0"
+
+"@hoomies/unagui.components.credits@0.0.1":
+  version "0.0.1"
+  resolved "https://node.bit.dev/@hoomies/unagui.components.credits/-/@hoomies-unagui.components.credits-0.0.1.tgz#cf001207bdbb6002a7609f390a6264afc77b451f"
+  integrity sha1-zwASB727YAKnYJ85CmJkr8d7RR8=
+  dependencies:
+    "@chakra-ui/react" "1.6.12"
+    core-js "^3.0.0"
+    uuid "8.3.2"
+
+"@hoomies/unagui.components.footer@^0.0.1":
+  version "0.0.1"
+  resolved "https://node.bit.dev/@hoomies/unagui.components.footer/-/@hoomies-unagui.components.footer-0.0.1.tgz#72b50b1502c3f964fbe651068f55e16a73dedb81"
+  integrity sha1-crULFQLD+WT75lEGj1XhanPe24E=
+  dependencies:
+    "@hoomies/unagui.components.boxer" "0.0.2"
+    "@hoomies/unagui.components.copyright" "0.0.1"
+    "@hoomies/unagui.components.credits" "0.0.1"
+    core-js "^3.0.0"
+
+"@hoomies/unagui.components.header@^0.0.1":
+  version "0.0.1"
+  resolved "https://node.bit.dev/@hoomies/unagui.components.header/-/@hoomies-unagui.components.header-0.0.1.tgz#f363c5adec3716c9d741b9600ff5803c2bc08fa8"
+  integrity sha1-82PFrew3FsnXQblgD/WAPCvAj6g=
+  dependencies:
+    "@chakra-ui/react" "1.6.12"
+    "@hoomies/unagui.components.boxer" "0.0.2"
+    core-js "^3.0.0"
 
 "@hoomies/unagui.theme.wrapper@^0.0.4":
   version "0.0.4"
@@ -4707,6 +4768,11 @@ util@0.12.4, util@^0.12.0:
     is-typed-array "^1.1.3"
     safe-buffer "^5.1.2"
     which-typed-array "^1.1.2"
+
+uuid@8.3.2, uuid@^8.3.2:
+  version "8.3.2"
+  resolved "https://registry.yarnpkg.com/uuid/-/uuid-8.3.2.tgz#80d5b5ced271bb9af6c445f21a1a04c606cefbe2"
+  integrity sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==
 
 v8-compile-cache@^2.0.3:
   version "2.3.0"
