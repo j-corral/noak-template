@@ -46,6 +46,7 @@
     "@emotion/react": "^11.6.0",
     "@emotion/server": "^11.4.0",
     "@emotion/styled": "^11.6.0",
+    "@hoomies/noak.components.switcher.locale": "^0.0.4",
     "@hoomies/noak.layouts.page.default": "^0.0.1",
     "@hoomies/noak.layouts.root": "^0.0.2",
     "@hoomies/noak.lib.api": "^0.0.1",

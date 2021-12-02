@@ -1355,6 +1355,30 @@
   resolved "https://registry.yarnpkg.com/@hapi/hoek/-/hoek-9.2.1.tgz#9551142a1980503752536b5050fd99f4a7f13b17"
   integrity sha512-gfta+H8aziZsm8pZa0vj04KO6biEiisppNgA1kbJvFrrWu9Vm7eaUEy76DIxsuTaWvti5fkJVhllWc6ZTE+Mdw==
 
+"@hoomies/fuel.types.map@0.0.1":
+  version "0.0.1"
+  resolved "https://node.bit.dev/@hoomies/fuel.types.map/-/@hoomies-fuel.types.map-0.0.1.tgz#a7e7df1eeb218f2305d8cdcfc625d06e5706ef62"
+  integrity sha1-p+ffHushjyMF2M3PxiXQblcG72I=
+  dependencies:
+    core-js "^3.0.0"
+
+"@hoomies/fuel.types.react@0.0.1":
+  version "0.0.1"
+  resolved "https://node.bit.dev/@hoomies/fuel.types.react/-/@hoomies-fuel.types.react-0.0.1.tgz#45d92c73cf03ecc3f44af6e5ed86ebf7a0da8898"
+  integrity sha1-Rdksc88D7MP0Svbl7Ybr96DaiJg=
+  dependencies:
+    core-js "^3.0.0"
+
+"@hoomies/noak.components.switcher.locale@^0.0.4":
+  version "0.0.4"
+  resolved "https://node.bit.dev/@hoomies/noak.components.switcher.locale/-/@hoomies-noak.components.switcher.locale-0.0.4.tgz#9ef93fa314357b0518352ffb85f39fd957973a97"
+  integrity sha1-nvk/oxQ1ewUYNS/7hfOf2VeXOpc=
+  dependencies:
+    "@hoomies/unagui.components.selector" "0.0.5"
+    core-js "^3.0.0"
+    next "^12.0.4"
+    next-translate "1.2.0"
+
 "@hoomies/noak.layouts.page.default@^0.0.1":
   version "0.0.1"
   resolved "https://node.bit.dev/@hoomies/noak.layouts.page.default/-/@hoomies-noak.layouts.page.default-0.0.1.tgz#06c195ad5c5f1a98e92ef1ec2857f5f1918ca983"
@@ -1441,6 +1465,16 @@
   dependencies:
     "@chakra-ui/react" "1.6.12"
     "@hoomies/unagui.components.boxer" "0.0.2"
+    core-js "^3.0.0"
+
+"@hoomies/unagui.components.selector@0.0.5":
+  version "0.0.5"
+  resolved "https://node.bit.dev/@hoomies/unagui.components.selector/-/@hoomies-unagui.components.selector-0.0.5.tgz#ed458c6762a4e351699b911447ba7f99802e4885"
+  integrity sha1-7UWMZ2Kk41Fpm5EUR7p/mYAuSIU=
+  dependencies:
+    "@chakra-ui/react" "1.6.12"
+    "@hoomies/fuel.types.map" "0.0.1"
+    "@hoomies/fuel.types.react" "0.0.1"
     core-js "^3.0.0"
 
 "@hoomies/unagui.theme.wrapper@^0.0.4":
@@ -3614,7 +3648,7 @@ next-connect@^0.11.0:
   dependencies:
     trouter "^3.1.0"
 
-next-translate@^1.2.0:
+next-translate@1.2.0, next-translate@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/next-translate/-/next-translate-1.2.0.tgz#e178b4c93fce7c8b78b3fa5cbb112f75fa631188"
   integrity sha512-L15JCfvj6BhQfx7i3nsJReUF7wrHe1RlzK7h25QlBT40prGQLZ5nJ6gx9Vd3Ew0V9QMqaVELUeQQ1u51yyDu0Q==
