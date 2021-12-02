@@ -48,6 +48,7 @@
     "@emotion/styled": "^11.6.0",
     "@hoomies/noak.layouts.page.default": "^0.0.1",
     "@hoomies/noak.layouts.root": "^0.0.2",
+    "@hoomies/noak.lib.api": "^0.0.1",
     "@hoomies/noak.types.next": "^0.0.4",
     "@hoomies/unagui.components.footer": "^0.0.1",
     "@hoomies/unagui.components.header": "^0.0.1",
