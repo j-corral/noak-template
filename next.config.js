@@ -4,5 +4,8 @@ const CustomNextConf = require("./config/next/conf.custom.js");
 
 const NextConfig = {...DefaultNextConf, ...CustomNextConf};
 
+// external dependencies
+const nextTranslate = require("next-translate");
+
 /** @type {import('next').NextConfig} */
-module.exports = NextConfig;
+module.exports = nextTranslate(NextConfig);
