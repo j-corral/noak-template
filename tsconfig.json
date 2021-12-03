@@ -21,9 +21,15 @@
     "strictNullChecks": true,
     "target": "es5",
     "paths": {
-      "~*": [
+      "@/*": [
         "./src/*"
-      ]
+      ],
+      "~config/*": [
+        "./config/*"
+      ],
+      "~public/*": [
+        "./public/*"
+      ],
     },
     "incremental": true
   },
