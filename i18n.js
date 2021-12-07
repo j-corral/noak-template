@@ -10,6 +10,7 @@ const DefaultI18nPages = {
 const pages = {...DefaultI18nPages, ...CustomI18nPages};
 
 module.exports = {
+  logBuild: false,
   locales: ["fr", "en", "es"],
   defaultLocale: "fr",
   pages,
