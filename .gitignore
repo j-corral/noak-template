@@ -35,3 +35,7 @@ yarn-error.log*
 
 # typescript
 *.tsbuildinfo
+
+# Custom config files
+config/**/custom.js
+config/**/*.custom.js
