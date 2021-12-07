@@ -5,7 +5,7 @@ import { extendTheme } from '@chakra-ui/react';
 import { defaultTheme } from './default.lock';
 import { customTheme } from './custom';
 
-const overrideTheme = { ...defaultTheme, ...customTheme };
+export const overrideTheme = { ...defaultTheme, ...customTheme };
 
 const theme = extendTheme(overrideTheme);
 
