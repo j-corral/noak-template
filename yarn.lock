@@ -434,7 +434,7 @@
   dependencies:
     "@chakra-ui/utils" "^1.9.1"
 
-"@chakra-ui/react@^1.7.2":
+"@chakra-ui/react@1.7.2", "@chakra-ui/react@^1.7.2":
   version "1.7.2"
   resolved "https://registry.yarnpkg.com/@chakra-ui/react/-/react-1.7.2.tgz#7613f33d4adc2384d2fa8675cb6e94780e5c4cbe"
   integrity sha512-2RxJHqYLSSB/dQQ9M4APxMopPfsU89A++63v8U8jiR7J8sUaa6Ded9ypTiIUY09J8v7mJAus4/ZSJxG7Zfd7aA==
@@ -831,6 +831,13 @@
   resolved "https://registry.yarnpkg.com/@hapi/hoek/-/hoek-9.2.1.tgz#9551142a1980503752536b5050fd99f4a7f13b17"
   integrity sha512-gfta+H8aziZsm8pZa0vj04KO6biEiisppNgA1kbJvFrrWu9Vm7eaUEy76DIxsuTaWvti5fkJVhllWc6ZTE+Mdw==
 
+"@hoomies/fuel.functions.capitalize@0.0.1":
+  version "0.0.1"
+  resolved "https://node.bit.dev/@hoomies/fuel.functions.capitalize/-/@hoomies-fuel.functions.capitalize-0.0.1.tgz#597b838d9cf3c63dd1672ae6f9c65a79f95bf275"
+  integrity sha1-WXuDjZzzxj3RZyrm+cZaeflb8nU=
+  dependencies:
+    core-js "^3.0.0"
+
 "@hoomies/fuel.types.map@0.0.1":
   version "0.0.1"
   resolved "https://node.bit.dev/@hoomies/fuel.types.map/-/@hoomies-fuel.types.map-0.0.1.tgz#a7e7df1eeb218f2305d8cdcfc625d06e5706ef62"
@@ -845,27 +852,39 @@
   dependencies:
     core-js "^3.0.0"
 
-"@hoomies/noak.components.navigation.item@0.0.2":
-  version "0.0.2"
-  resolved "https://node.bit.dev/@hoomies/noak.components.navigation.item/-/@hoomies-noak.components.navigation.item-0.0.2.tgz#60a3c65e8307d91bd6abd74017312a959f48c1dd"
-  integrity sha1-YKPGXoMH2RvWq9dAFzEqlZ9Iwd0=
+"@hoomies/noak.components.footer@^0.0.1":
+  version "0.0.1"
+  resolved "https://node.bit.dev/@hoomies/noak.components.footer/-/@hoomies-noak.components.footer-0.0.1.tgz#4765884f41f85628c5e22bbc402dc9c38207b02f"
+  integrity sha1-R2WIT0H4VijF4iu8QC3Jw4IHsC8=
   dependencies:
     "@chakra-ui/react" "^1.7.2"
     "@emotion/react" "^11"
     "@emotion/styled" "^11"
+    "@hoomies/noak.components.navigation.menu" "0.0.5"
+    "@hoomies/unagui.components.footer" "0.0.6"
     core-js "^3.0.0"
     framer-motion "^5.3.3"
     next-translate "^1"
 
-"@hoomies/noak.components.navigation.menu@^0.0.4":
-  version "0.0.4"
-  resolved "https://node.bit.dev/@hoomies/noak.components.navigation.menu/-/@hoomies-noak.components.navigation.menu-0.0.4.tgz#6b4e33a2cb9084c29f79f3989a82d559fd7bf006"
-  integrity sha1-a04zosuQhMKfefOYmoLVWf178AY=
+"@hoomies/noak.components.navigation.item@0.0.3":
+  version "0.0.3"
+  resolved "https://node.bit.dev/@hoomies/noak.components.navigation.item/-/@hoomies-noak.components.navigation.item-0.0.3.tgz#2ea4948f353ad3c071272400fedd0bb5a1b98fee"
+  integrity sha1-LqSUjzU608BxJyQA/t0LtaG5j+4=
+  dependencies:
+    "@chakra-ui/react" "1.7.2"
+    "@hoomies/fuel.functions.capitalize" "0.0.1"
+    core-js "^3.0.0"
+    next-translate "^1"
+
+"@hoomies/noak.components.navigation.menu@0.0.5", "@hoomies/noak.components.navigation.menu@^0.0.5":
+  version "0.0.5"
+  resolved "https://node.bit.dev/@hoomies/noak.components.navigation.menu/-/@hoomies-noak.components.navigation.menu-0.0.5.tgz#15d0f914d35948fab9890e508da0a7bc87ff83f9"
+  integrity sha1-FdD5FNNZSPq5iQ5QjaCnvIf/g/k=
   dependencies:
     "@chakra-ui/react" "^1.7.2"
     "@emotion/react" "^11"
     "@emotion/styled" "^11"
-    "@hoomies/noak.components.navigation.item" "0.0.2"
+    "@hoomies/noak.components.navigation.item" "0.0.3"
     core-js "^3.0.0"
     framer-motion "^5.3.3"
     uuid "^8.3.2"
@@ -951,7 +970,7 @@
     core-js "^3.0.0"
     uuid "^8.3"
 
-"@hoomies/unagui.components.footer@^0.0.6":
+"@hoomies/unagui.components.footer@0.0.6", "@hoomies/unagui.components.footer@^0.0.6":
   version "0.0.6"
   resolved "https://node.bit.dev/@hoomies/unagui.components.footer/-/@hoomies-unagui.components.footer-0.0.6.tgz#d38d6704993385c0f610348039d7cf8635e8bb3c"
   integrity sha1-041nBJkzhcD2EDSAOdfPhjXouzw=
@@ -969,6 +988,23 @@
   dependencies:
     "@chakra-ui/css-reset" "^1.1.1"
     "@hoomies/unagui.components.boxer" "0.0.7"
+    core-js "^3.0.0"
+
+"@hoomies/unagui.components.hero@^0.0.11":
+  version "0.0.11"
+  resolved "https://node.bit.dev/@hoomies/unagui.components.hero/-/@hoomies-unagui.components.hero-0.0.11.tgz#0b94c296b418ff1387c4c72d5a0d743e2bdc6781"
+  integrity sha1-C5TClrQY/xOHxMctWg10PivcZ4E=
+  dependencies:
+    "@chakra-ui/css-reset" "^1.1.1"
+    "@hoomies/unagui.components.section" "0.0.9"
+    core-js "^3.0.0"
+
+"@hoomies/unagui.components.section@0.0.9":
+  version "0.0.9"
+  resolved "https://node.bit.dev/@hoomies/unagui.components.section/-/@hoomies-unagui.components.section-0.0.9.tgz#625922dc1b5436b7a7c98a4e23da58fa583937b0"
+  integrity sha1-Ylki3BtUNrenyYpOI9pY+lg5N7A=
+  dependencies:
+    "@chakra-ui/css-reset" "^1.1.1"
     core-js "^3.0.0"
 
 "@hoomies/unagui.components.selector@0.0.10":
