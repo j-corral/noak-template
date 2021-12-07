@@ -39,4 +39,3 @@ yarn-error.log*
 # Custom config files
 config/**/custom.js
 config/**/*.custom.js
-config/i18n/pages.custom.js
