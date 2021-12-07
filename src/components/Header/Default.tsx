@@ -13,18 +13,18 @@ import Logo from '~public/vercel.svg';
 
 export function Header(props: HeaderProps) {
   const { t } = useTranslation();
-  const localeSwitcherItem = <LocaleSwitcher label={t('menu:lang.text')} variant="outline" />;
 
   return (
     <>
       <NoakHeader
         logo={<Image src={Logo} width="100%" height="50px" alt="logo" />}
         menu={<Menu routes={DefaultRoutes} />}
-        localeswitcher={localeSwitcherItem}
-        themeswitcher={<ThemeSwitcher />}
         p="0 2rem"
         {...props}
-      />
+      >
+        <LocaleSwitcher label={t('menu:lang.text')} variant="outline" />
+        <ThemeSwitcher />
+      </NoakHeader>
     </>
   );
 }
