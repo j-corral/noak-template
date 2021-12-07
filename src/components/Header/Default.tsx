@@ -8,7 +8,7 @@ import { LocaleSwitcher } from '@hoomies/noak.components.switcher.locale';
 import { ThemeSwitcher } from '@hoomies/noak.components.switcher.theme';
 import { Menu } from '@hoomies/noak.components.navigation.menu';
 
-import DefaultRoutes from '~config/routes/default.lock';
+import Routes from '~config/routes/header';
 import Logo from '~public/vercel.svg';
 
 export function Header(props: HeaderProps) {
@@ -18,7 +18,7 @@ export function Header(props: HeaderProps) {
     <>
       <NoakHeader
         logo={<Image src={Logo} width="100%" height="50px" alt="logo" />}
-        menu={<Menu routes={DefaultRoutes} />}
+        menu={<Menu routes={Routes} />}
         p="0 2rem"
         {...props}
       >
