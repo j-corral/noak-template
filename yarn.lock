@@ -953,6 +953,14 @@
     "@chakra-ui/css-reset" "^1.1.1"
     core-js "^3.0.0"
 
+"@hoomies/unagui.components.boxer@0.0.8":
+  version "0.0.8"
+  resolved "https://node.bit.dev/@hoomies/unagui.components.boxer/-/@hoomies-unagui.components.boxer-0.0.8.tgz#bcf5782cded2fa2d71a7cbeb81990dafbfd78b11"
+  integrity sha1-vPV4LN7S+i1xp8vrgZkNr7/XixE=
+  dependencies:
+    "@chakra-ui/css-reset" "^1.1.1"
+    core-js "^3.0.0"
+
 "@hoomies/unagui.components.copyright@0.0.5":
   version "0.0.5"
   resolved "https://node.bit.dev/@hoomies/unagui.components.copyright/-/@hoomies-unagui.components.copyright-0.0.5.tgz#de1c9a361600494a134ac36ff0bdf3f8d3ae7400"
@@ -970,7 +978,7 @@
     core-js "^3.0.0"
     uuid "^8.3"
 
-"@hoomies/unagui.components.footer@0.0.6", "@hoomies/unagui.components.footer@^0.0.6":
+"@hoomies/unagui.components.footer@0.0.6":
   version "0.0.6"
   resolved "https://node.bit.dev/@hoomies/unagui.components.footer/-/@hoomies-unagui.components.footer-0.0.6.tgz#d38d6704993385c0f610348039d7cf8635e8bb3c"
   integrity sha1-041nBJkzhcD2EDSAOdfPhjXouzw=
@@ -981,28 +989,39 @@
     "@hoomies/unagui.components.credits" "0.0.6"
     core-js "^3.0.0"
 
-"@hoomies/unagui.components.header@^0.0.6":
-  version "0.0.6"
-  resolved "https://node.bit.dev/@hoomies/unagui.components.header/-/@hoomies-unagui.components.header-0.0.6.tgz#fa4be72cb592b66e4bb2071e2b03d9c064591120"
-  integrity sha1-+kvnLLWStm5LsgceKwPZwGRZESA=
+"@hoomies/unagui.components.footer@^0.0.7":
+  version "0.0.7"
+  resolved "https://node.bit.dev/@hoomies/unagui.components.footer/-/@hoomies-unagui.components.footer-0.0.7.tgz#d9f10cf9caa803e58afc98866d2d08dd80474a49"
+  integrity sha1-2fEM+cqoA+WK/JiGbS0I3YBHSkk=
   dependencies:
     "@chakra-ui/css-reset" "^1.1.1"
-    "@hoomies/unagui.components.boxer" "0.0.7"
+    "@hoomies/unagui.components.boxer" "0.0.8"
+    "@hoomies/unagui.components.copyright" "0.0.5"
+    "@hoomies/unagui.components.credits" "0.0.6"
     core-js "^3.0.0"
 
-"@hoomies/unagui.components.hero@^0.0.11":
-  version "0.0.11"
-  resolved "https://node.bit.dev/@hoomies/unagui.components.hero/-/@hoomies-unagui.components.hero-0.0.11.tgz#0b94c296b418ff1387c4c72d5a0d743e2bdc6781"
-  integrity sha1-C5TClrQY/xOHxMctWg10PivcZ4E=
+"@hoomies/unagui.components.header@^0.0.7":
+  version "0.0.7"
+  resolved "https://node.bit.dev/@hoomies/unagui.components.header/-/@hoomies-unagui.components.header-0.0.7.tgz#39be2d241d4c9c3ac2b97a40c9b6ea4e04a4a593"
+  integrity sha1-Ob4tJB1MnDrCuXpAybbqTgSkpZM=
   dependencies:
     "@chakra-ui/css-reset" "^1.1.1"
-    "@hoomies/unagui.components.section" "0.0.9"
+    "@hoomies/unagui.components.boxer" "0.0.8"
     core-js "^3.0.0"
 
-"@hoomies/unagui.components.section@0.0.9":
-  version "0.0.9"
-  resolved "https://node.bit.dev/@hoomies/unagui.components.section/-/@hoomies-unagui.components.section-0.0.9.tgz#625922dc1b5436b7a7c98a4e23da58fa583937b0"
-  integrity sha1-Ylki3BtUNrenyYpOI9pY+lg5N7A=
+"@hoomies/unagui.components.hero@^0.0.12":
+  version "0.0.12"
+  resolved "https://node.bit.dev/@hoomies/unagui.components.hero/-/@hoomies-unagui.components.hero-0.0.12.tgz#8a126410f074ce460f42c7da66d3efdf104ad5c9"
+  integrity sha1-ihJkEPB0zkYPQsfaZtPv3xBK1ck=
+  dependencies:
+    "@chakra-ui/css-reset" "^1.1.1"
+    "@hoomies/unagui.components.section" "0.0.10"
+    core-js "^3.0.0"
+
+"@hoomies/unagui.components.section@0.0.10":
+  version "0.0.10"
+  resolved "https://node.bit.dev/@hoomies/unagui.components.section/-/@hoomies-unagui.components.section-0.0.10.tgz#b40ac528acfdb128e5112c004a1a796342435c61"
+  integrity sha1-tArFKKz9sSjlESwAShp5Y0JDXGE=
   dependencies:
     "@chakra-ui/css-reset" "^1.1.1"
     core-js "^3.0.0"
