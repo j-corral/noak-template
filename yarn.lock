@@ -1077,13 +1077,13 @@
     framer-motion "^5.3.3"
     next-translate "^1"
 
-"@hoomies/noak.components.mdx.converter@^0.0.2":
-  version "0.0.2"
-  resolved "https://node.bit.dev/@hoomies/noak.components.mdx.converter/-/@hoomies-noak.components.mdx.converter-0.0.2.tgz#0e3e316a51ee4d5bec7746150bcdc3e747bbc90c"
-  integrity sha1-Dj4xalHuTVvsd0YVC83D50e7yQw=
+"@hoomies/noak.components.mdx.converter@^0.0.5":
+  version "0.0.5"
+  resolved "https://node.bit.dev/@hoomies/noak.components.mdx.converter/-/@hoomies-noak.components.mdx.converter-0.0.5.tgz#ae8fa9920e386e7345267c30eb773105157573be"
+  integrity sha1-ro+pkg44bnNFJnww63cxBRV1c74=
   dependencies:
     "@hoomies/fuel.types.object" "0.0.2"
-    "@hoomies/noak.functions.get-components" "0.0.4"
+    "@hoomies/noak.functions.get-components" "0.0.5"
     core-js "^3.0.0"
     gray-matter "^4.0.3"
     next-mdx-remote "^3.0.8"
@@ -1129,10 +1129,10 @@
     core-js "^3.0.0"
     next-translate "^1"
 
-"@hoomies/noak.functions.get-components@0.0.4", "@hoomies/noak.functions.get-components@^0.0.4":
-  version "0.0.4"
-  resolved "https://node.bit.dev/@hoomies/noak.functions.get-components/-/@hoomies-noak.functions.get-components-0.0.4.tgz#0ae8095c0dea3eeb1496ceada8aa65bf3832477f"
-  integrity sha1-CugJXA3qPusUls6tqKplvzgyR38=
+"@hoomies/noak.functions.get-components@0.0.5", "@hoomies/noak.functions.get-components@^0.0.5":
+  version "0.0.5"
+  resolved "https://node.bit.dev/@hoomies/noak.functions.get-components/-/@hoomies-noak.functions.get-components-0.0.5.tgz#25ad8d542611a2ba1e099054ecb7d510c53d1a12"
+  integrity sha1-Ja2NVCYRoroeCZBU7LfVEMU9GhI=
   dependencies:
     "@chakra-ui/react" "1.7.2"
     "@hoomies/fuel.functions.filter.object.prop" "0.0.2"
@@ -1142,7 +1142,7 @@
     "@hoomies/noak.components.navigation.menu" "0.0.6"
     "@hoomies/noak.components.switcher.locale" "0.0.10"
     "@hoomies/noak.components.switcher.theme" "0.0.4"
-    "@hoomies/unagui.functions.get-components" "0.0.3"
+    "@hoomies/unagui.functions.get-components" "0.0.4"
     core-js "^3.0.0"
 
 "@hoomies/noak.layouts.page.default@^0.0.3":
@@ -1290,10 +1290,10 @@
     "@chakra-ui/icons" "1.0.17"
     core-js "^3.0.0"
 
-"@hoomies/unagui.functions.get-components@0.0.3":
-  version "0.0.3"
-  resolved "https://node.bit.dev/@hoomies/unagui.functions.get-components/-/@hoomies-unagui.functions.get-components-0.0.3.tgz#042938c992b0b69564e515ad1bd4a3b282ac525e"
-  integrity sha1-BCk4yZKwtpVk5RWtG9SjsoKsUl4=
+"@hoomies/unagui.functions.get-components@0.0.4":
+  version "0.0.4"
+  resolved "https://node.bit.dev/@hoomies/unagui.functions.get-components/-/@hoomies-unagui.functions.get-components-0.0.4.tgz#d490cb61aece62bbba18e31345ee515474995dd2"
+  integrity sha1-1JDLYa7OYru6GOMTRe5RVHSZXdI=
   dependencies:
     "@hoomies/fuel.functions.filter.object.prop" "0.0.2"
     "@hoomies/fuel.types.object" "0.0.2"
