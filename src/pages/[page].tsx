@@ -7,7 +7,7 @@ import { MDXConverter, MDXConverterProps } from '@hoomies/noak.components.mdx.co
 
 import { getSourceFileBySlug, getFiles } from '@/lib/mdx';
 
-import { SkeletonCircle, SkeletonText, Box, Center } from '@chakra-ui/react';
+import { Box, Center, SkeletonCircle, SkeletonText } from '@chakra-ui/react';
 
 const MDXPage: NextPage<MDXConverterProps> = ({ source, componentNames }) => {
   const { t } = useTranslation();
@@ -26,14 +26,34 @@ const MDXPage: NextPage<MDXConverterProps> = ({ source, componentNames }) => {
     );
   }
 
-  return <MDXConverter source={source} componentNames={componentNames} />;
+  return (
+    <>
+      <MDXConverter source={source} componentNames={componentNames} />
+    </>
+  );
 };
 
 export default MDXPage;
 
 export async function getStaticProps(context) {
   try {
-    const source = await getSourceFileBySlug('pages', context?.params?.page);
+    const slug = context?.params?.page ?? 'default';
+
+    const endpoint = process.env.MDX_API + `${slug}.mdx`;
+    const res = await fetch(endpoint, {
+      headers: {
+        Authorization: `token ${process.env.MDX_TOKEN}`,
+      },
+    });
+
+    let source = '';
+    if (res.status === 200) {
+      const data = await res.json();
+      source = Buffer.from(data?.content, 'base64').toString('utf-8');
+    } else {
+      source = await getSourceFileBySlug('pages', slug);
+    }
+
     const MDXProps = await ParseMDX({ source });
 
     return { props: { ...MDXProps }, revalidate: 5 };
