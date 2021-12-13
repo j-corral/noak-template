@@ -5,7 +5,7 @@
 const DefaultFooterRoutes = [
   {
     label: "menu:page.legal",
-    path: "/legal",
+    path: "/p/legal",
     icon: "",
   },
 ];
