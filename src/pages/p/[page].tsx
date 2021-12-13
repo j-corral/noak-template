@@ -7,7 +7,12 @@ import { MDXConverter, MDXConverterProps } from '@hoomies/noak.components.mdx.co
 
 import { getSourceFileBySlug, getFiles } from '@/lib/mdx';
 
-import { Box, Center, SkeletonCircle, SkeletonText } from '@chakra-ui/react';
+import { Box, Center, SkeletonCircle, SkeletonText, Text } from '@chakra-ui/react';
+
+const customComponents = {
+  Text,
+  wrapper: (props) => <Box my={50} w={'75vw'} alignSelf={'center'} {...props}></Box>,
+};
 
 const MDXPage: NextPage<MDXConverterProps> = ({ source, componentNames }) => {
   const { t } = useTranslation();
@@ -28,7 +33,7 @@ const MDXPage: NextPage<MDXConverterProps> = ({ source, componentNames }) => {
 
   return (
     <>
-      <MDXConverter source={source} componentNames={componentNames} />
+      <MDXConverter source={source} componentNames={componentNames} customComponents={customComponents} />
     </>
   );
 };
@@ -37,9 +42,10 @@ export default MDXPage;
 
 export async function getStaticProps(context) {
   try {
-    const slug = context?.params?.page ?? 'default';
+    const page = context?.params?.page ?? 'default';
+    const locale = context?.locale ?? 'fr';
 
-    const endpoint = process.env.MDX_API + `${slug}.mdx`;
+    const endpoint = process.env.MDX_API + `${page}/${locale}.mdx`;
     const res = await fetch(endpoint, {
       headers: {
         Authorization: `token ${process.env.MDX_TOKEN}`,
@@ -51,12 +57,12 @@ export async function getStaticProps(context) {
       const data = await res.json();
       source = Buffer.from(data?.content, 'base64').toString('utf-8');
     } else {
-      source = await getSourceFileBySlug('pages', slug);
+      source = await getSourceFileBySlug(`pages/${page}`, locale);
     }
 
     const MDXProps = await ParseMDX({ source });
 
-    return { props: { ...MDXProps }, revalidate: 5 };
+    return { props: { ...MDXProps }, revalidate: 120 };
   } catch (err) {
     console.error(err);
   }
