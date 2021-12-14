@@ -1,6 +1,0 @@
-/**
- * Configures Routes to display in menu
- */
-const CustomRoutes = [];
-
-module.exports = CustomRoutes;

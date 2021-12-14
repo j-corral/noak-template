@@ -33,8 +33,9 @@
     ]
   },
   "scripts": {
-    "dev": "next dev -p 3030",
+    "dev": "yarn build:config && next dev -p 3030",
     "build": "next build",
+    "build:config": "tsc next.config.ts --target es5 --outDir .noak",
     "start": "next start",
     "lint": "next lint",
     "check:types": "tsc --noEmit",

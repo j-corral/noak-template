@@ -1,0 +1,9 @@
+import { TRoutes, createRoute } from './helper';
+
+/**
+ * Configures Routes to display in menu
+ */
+const selectedPaths : Array<string> = ['/p/about', '/blog', '/contact'];
+const CustomRoutes: TRoutes = getRoutes(selectedPaths);
+
+export default CustomRoutes;

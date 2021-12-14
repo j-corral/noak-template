@@ -3,4 +3,4 @@ const CustomNextConf = {
     
 };
 
-module.exports = CustomNextConf;
+export default CustomNextConf;

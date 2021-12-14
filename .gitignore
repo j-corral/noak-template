@@ -36,6 +36,12 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 
+# auto generated next config file
+/next.config.js
+/.noak/
+
 # Custom config files
-config/**/custom.js
-config/**/*.custom.js
+config/*.js
+config/**/*.js
+config/**/custom.ts
+config/**/*.custom.ts

@@ -1,0 +1,9 @@
+import { TRoutes, createRoute } from './helper';
+
+/**
+ * Configures Routes to display in footer
+ */
+const selectedPaths : Array<string> = [];
+const CustomRoutes: TRoutes = getRoutes(selectedPaths);
+
+export default CustomRoutes;
