@@ -1063,60 +1063,63 @@
   dependencies:
     core-js "^3.0.0"
 
-"@hoomies/noak.components.footer@0.0.6", "@hoomies/noak.components.footer@^0.0.6":
-  version "0.0.6"
-  resolved "https://node.bit.dev/@hoomies/noak.components.footer/-/@hoomies-noak.components.footer-0.0.6.tgz#58bc1415829e514208c4cedaf741ec385947130d"
-  integrity sha1-WLwUFYKeUUIIxM7a90HsOFlHEw0=
+"@hoomies/noak.components.footer@0.0.7", "@hoomies/noak.components.footer@^0.0.7":
+  version "0.0.7"
+  resolved "https://node.bit.dev/@hoomies/noak.components.footer/-/@hoomies-noak.components.footer-0.0.7.tgz#b2473143bf8b27e271374cc2ff29259c17446c72"
+  integrity sha1-skcxQ7+LJ+JxN0zC/yklnBdEbHI=
   dependencies:
     "@chakra-ui/react" "^1.7.2"
     "@emotion/react" "^11"
     "@emotion/styled" "^11"
-    "@hoomies/noak.components.navigation.menu" "0.0.10"
+    "@hoomies/noak.components.navigation.menu" "0.0.11"
     "@hoomies/unagui.components.footer" "0.0.6"
     core-js "^3.0.0"
     framer-motion "^5.3.3"
     next-translate "^1.2"
 
-"@hoomies/noak.components.mdx.converter@^0.0.9":
-  version "0.0.9"
-  resolved "https://node.bit.dev/@hoomies/noak.components.mdx.converter/-/@hoomies-noak.components.mdx.converter-0.0.9.tgz#ef500abf2b88394f9a34838c7f067f994d087af2"
-  integrity sha1-71AKvyuIOU+aNIOMfwZ/mU0IevI=
+"@hoomies/noak.components.mdx.converter@^0.0.10":
+  version "0.0.10"
+  resolved "https://node.bit.dev/@hoomies/noak.components.mdx.converter/-/@hoomies-noak.components.mdx.converter-0.0.10.tgz#29bcdc4269c01811f700ed91c8715344b8d661a1"
+  integrity sha1-KbzcQmnAGBH3AO2RyHFTRLjWYaE=
   dependencies:
     "@hoomies/fuel.types.object" "0.0.2"
-    "@hoomies/noak.functions.get-components" "0.0.9"
+    "@hoomies/noak.functions.get-components" "0.0.10"
     core-js "^3.0.0"
     gray-matter "^4.0.3"
     next-mdx-remote "^3.0.8"
 
-"@hoomies/noak.components.navigation.item@0.0.8":
-  version "0.0.8"
-  resolved "https://node.bit.dev/@hoomies/noak.components.navigation.item/-/@hoomies-noak.components.navigation.item-0.0.8.tgz#8eebc8fc3fad2477d4eb0874608bb40faae3aec4"
-  integrity sha1-juvI/D+tJHfU6wh0YIu0D6rjrsQ=
+"@hoomies/noak.components.navigation.item@0.0.9":
+  version "0.0.9"
+  resolved "https://node.bit.dev/@hoomies/noak.components.navigation.item/-/@hoomies-noak.components.navigation.item-0.0.9.tgz#861a4fc46100ff3dad12da635507e9905423a3a5"
+  integrity sha1-hhpPxGEA/z2tEtpjVQfpkFQjo6U=
   dependencies:
     "@chakra-ui/react" "1.7.2"
     "@hoomies/fuel.functions.capitalize" "0.0.1"
-    "@hoomies/fuel.types.object" "0.0.2"
+    "@hoomies/noak.functions.route" "0.0.1"
+    "@hoomies/noak.types.route" "0.0.1"
     core-js "^3.0.0"
     next-translate "^1.2"
 
-"@hoomies/noak.components.navigation.menu@0.0.10", "@hoomies/noak.components.navigation.menu@^0.0.10":
-  version "0.0.10"
-  resolved "https://node.bit.dev/@hoomies/noak.components.navigation.menu/-/@hoomies-noak.components.navigation.menu-0.0.10.tgz#82a4909061a32a64fd2b0f5f46c1dfd949ad039e"
-  integrity sha1-gqSQkGGjKmT9Kw9fRsHf2UmtA54=
+"@hoomies/noak.components.navigation.menu@0.0.11", "@hoomies/noak.components.navigation.menu@^0.0.11":
+  version "0.0.11"
+  resolved "https://node.bit.dev/@hoomies/noak.components.navigation.menu/-/@hoomies-noak.components.navigation.menu-0.0.11.tgz#61f1fc60ab043950ab3b9fba6e22d3041bdf3ec8"
+  integrity sha1-YfH8YKsEOVCrO5+6biLTBBvfPsg=
   dependencies:
     "@chakra-ui/react" "^1.7.2"
     "@emotion/react" "^11"
     "@emotion/styled" "^11"
-    "@hoomies/noak.components.navigation.item" "0.0.8"
+    "@hoomies/noak.components.navigation.item" "0.0.9"
+    "@hoomies/noak.types.route" "0.0.1"
     core-js "^3.0.0"
     framer-motion "^5.3.3"
     uuid "^8.3.2"
 
-"@hoomies/noak.components.switcher.locale@0.0.11", "@hoomies/noak.components.switcher.locale@^0.0.11":
-  version "0.0.11"
-  resolved "https://node.bit.dev/@hoomies/noak.components.switcher.locale/-/@hoomies-noak.components.switcher.locale-0.0.11.tgz#813066ec42e085fd8ecc18156d53685bdf2a4366"
-  integrity sha1-gTBm7ELghf2OzBgVbVNoW98qQ2Y=
+"@hoomies/noak.components.switcher.locale@0.0.12", "@hoomies/noak.components.switcher.locale@^0.0.12":
+  version "0.0.12"
+  resolved "https://node.bit.dev/@hoomies/noak.components.switcher.locale/-/@hoomies-noak.components.switcher.locale-0.0.12.tgz#d9526d1468498a70205ca016709448f9c5600db5"
+  integrity sha1-2VJtFGhJinAgXKAWcJRI+cVgDbU=
   dependencies:
+    "@hoomies/noak.types.route" "0.0.1"
     "@hoomies/unagui.components.selector" "0.0.10"
     core-js "^3.0.0"
     next-translate "^1.2"
@@ -1130,20 +1133,28 @@
     core-js "^3.0.0"
     next-translate "^1.2"
 
-"@hoomies/noak.functions.get-components@0.0.9", "@hoomies/noak.functions.get-components@^0.0.9":
-  version "0.0.9"
-  resolved "https://node.bit.dev/@hoomies/noak.functions.get-components/-/@hoomies-noak.functions.get-components-0.0.9.tgz#5bec9b046e32997e2c17afee2e50c213ff79bdc0"
-  integrity sha1-W+ybBG4ymX4sF6/uLlDCE/95vcA=
+"@hoomies/noak.functions.get-components@0.0.10", "@hoomies/noak.functions.get-components@^0.0.10":
+  version "0.0.10"
+  resolved "https://node.bit.dev/@hoomies/noak.functions.get-components/-/@hoomies-noak.functions.get-components-0.0.10.tgz#9fa98d4e13f3ef9360d3e78944f560a83ada3659"
+  integrity sha1-n6mNThPz75Ng0+eJRPVgqDraNlk=
   dependencies:
     "@chakra-ui/react" "1.7.2"
     "@hoomies/fuel.functions.filter.object.prop" "0.0.2"
     "@hoomies/fuel.types.object" "0.0.2"
-    "@hoomies/noak.components.footer" "0.0.6"
-    "@hoomies/noak.components.navigation.item" "0.0.8"
-    "@hoomies/noak.components.navigation.menu" "0.0.10"
-    "@hoomies/noak.components.switcher.locale" "0.0.11"
+    "@hoomies/noak.components.footer" "0.0.7"
+    "@hoomies/noak.components.navigation.item" "0.0.9"
+    "@hoomies/noak.components.navigation.menu" "0.0.11"
+    "@hoomies/noak.components.switcher.locale" "0.0.12"
     "@hoomies/noak.components.switcher.theme" "0.0.5"
     "@hoomies/unagui.functions.get-components" "0.0.4"
+    core-js "^3.0.0"
+
+"@hoomies/noak.functions.route@0.0.1", "@hoomies/noak.functions.route@^0.0.1":
+  version "0.0.1"
+  resolved "https://node.bit.dev/@hoomies/noak.functions.route/-/@hoomies-noak.functions.route-0.0.1.tgz#57417c13a5a93c117c77a307f2fd0e23e92db5b2"
+  integrity sha1-V0F8E6WpPBF8d6MH8v0OI+kttbI=
+  dependencies:
+    "@hoomies/noak.types.route" "0.0.1"
     core-js "^3.0.0"
 
 "@hoomies/noak.layouts.page.default@^0.0.3":
@@ -1182,6 +1193,14 @@
   integrity sha1-wNwEb0Md3ECeEtoWHnUCndtZ5bs=
   dependencies:
     "@hoomies/noak.layouts.root" "0.0.5"
+    core-js "^3.0.0"
+
+"@hoomies/noak.types.route@0.0.1", "@hoomies/noak.types.route@^0.0.1":
+  version "0.0.1"
+  resolved "https://node.bit.dev/@hoomies/noak.types.route/-/@hoomies-noak.types.route-0.0.1.tgz#174bd8254e2144ba0ef643c8632fa1b8797e00af"
+  integrity sha1-F0vYJU4hRLoO9kPIYy+huHl+AK8=
+  dependencies:
+    "@hoomies/fuel.types.object" "0.0.2"
     core-js "^3.0.0"
 
 "@hoomies/unagui.components.boxer@0.0.7":
