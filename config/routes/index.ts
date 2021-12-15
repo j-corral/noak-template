@@ -18,8 +18,8 @@ export function getAllRoutes() {
 export function getRoutes(paths: Array<string>) {
   let selectedRoutes: TRoutes = [];
   paths.forEach((path) => {
-    const route: TRoute | false = getRoute(path);
-    if (route && Object.keys(route).length > 0) {
+    const route: TRoute | boolean = getRoute(path);
+    if (typeof route === 'object' && Object.keys(route).length > 0) {
       selectedRoutes.push(route);
     }
   });
@@ -28,12 +28,41 @@ export function getRoutes(paths: Array<string>) {
 }
 /**
  * Get route by path
- *
+ * @throws Error if route not found
  * @param {string} path
- * @returns TRoute | false if not found
+ * @param {boolean} critical - If true, throw error if route not found
+ * @returns TRoute
  */
-export function getRoute(path: TRoute['path']) {
-  return Routes.find((route) => route.path === path) ?? false;
+export function getRoute(path: TRoute['path'], critical: boolean = false) {
+  let match = Routes.find((route) => route.path === path) ?? getDeepRoute(path);
+
+  if (!match && critical) {
+    throw new Error(`[getRoute] - Route not found: ${path}`);
+  }
+
+  return match;
+}
+
+/**
+ * Get deep route by path (searching route.lang)
+ * @param {string} path
+ * @returns TRoute | false - If route not found, return false
+ */
+function getDeepRoute(path: TRoute['path']) {
+  let result: TRoute | false = false;
+
+  Routes.every((route) => {
+    if (route.lang) {
+      const seo = Object.values(route.lang);
+      if (seo.includes(path)) {
+        result = route;
+        return false;
+      }
+    }
+    return true;
+  });
+
+  return result;
 }
 
 const Routes: TRoutes = getAllRoutes();
