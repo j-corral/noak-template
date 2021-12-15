@@ -1,4 +1,4 @@
-import { TRoutes, createRoute } from './helper';
+import { TRoutes } from '@hoomies/noak.types.route';
 
 /**
  * Configures Routes to display in menu

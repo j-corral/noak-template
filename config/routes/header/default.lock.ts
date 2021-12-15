@@ -1,5 +1,5 @@
 // !!! YOU MAY NOT EDIT THIS FILE IN CHILD NOAK-THEME !!!
-import { TRoutes } from '~config/routes/helper';
+import { TRoutes } from '@hoomies/noak.types.route';
 import { getRoutes } from '~config/routes';
 
 /**
