@@ -47,6 +47,11 @@ const NextHeaders = [
     key: 'X-Content-Type-Options',
     value: 'nosniff',
   },
+  // https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Powered-By
+  {
+    key: 'X-Powered-By',
+    value: 'Noak',
+  },
 ];
 
 export default NextHeaders;
