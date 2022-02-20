@@ -1,5 +1,6 @@
 import useTranslation from 'next-translate/useTranslation';
 import { useRouter } from 'next/router';
+import { GetStaticPropsContext } from 'next';
 
 import type { NextPage } from '@hoomies/noak.types.next';
 import { ParseMDX } from '@hoomies/fuel.functions.parse-mdx';
@@ -7,11 +8,11 @@ import { MDXConverter, MDXConverterProps } from '@hoomies/noak.components.mdx.co
 
 import { getSourceFileBySlug, getFiles } from '@/lib/mdx';
 
-import { Box, Center, SkeletonCircle, SkeletonText, Text } from '@chakra-ui/react';
+import { Box, BoxProps, Center, SkeletonCircle, SkeletonText, Text } from '@chakra-ui/react';
 
 const customComponents = {
   Text,
-  wrapper: (props) => <Box my={50} w={'75vw'} alignSelf={'center'} {...props}></Box>,
+  wrapper: (props: BoxProps) => <Box my={50} w={'75vw'} alignSelf={'center'} {...props}></Box>,
 };
 
 const MDXPage: NextPage<MDXConverterProps> = ({ source, componentNames }) => {
@@ -40,7 +41,7 @@ const MDXPage: NextPage<MDXConverterProps> = ({ source, componentNames }) => {
 
 export default MDXPage;
 
-export async function getStaticProps(context) {
+export async function getStaticProps(context: GetStaticPropsContext) {
   try {
     const page = context?.params?.page ?? 'default';
     const locale = context?.locale ?? 'fr';
