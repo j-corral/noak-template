@@ -41,7 +41,7 @@ yarn-error.log*
 /.noak/
 
 # Custom config files
-config/*.js
-config/**/*.js
-config/**/custom.ts
-config/**/*.custom.ts
+# config/*.sample
+# config/**/*.sample
+# config/**/custom.ts
+# config/**/*.custom.ts

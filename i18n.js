@@ -1,6 +1,6 @@
 // !!! YOU MAY NOT EDIT THIS FILE IN CHILD NOAK-THEME !!!
-const CustomI18nPages = require("./config/i18n/pages.custom.js");
-const CustomI18nLang = require("./config/i18n/lang.custom.js");
+const CustomI18nPages = require("./config/i18n/pages.js");
+const CustomI18nLang = require("./config/i18n/lang.js");
 
 const DefaultI18nLang = ['fr'];
 const DefaultI18nPages = {
