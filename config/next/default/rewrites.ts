@@ -20,10 +20,11 @@ function autoRewriteRoutes() {
   let rewrites: TRewrites = [];
   Routes.forEach((route) => {
     if (route?.lang !== undefined) {
-      Object.keys(route.lang).forEach((key) => {
-        const srcRoute = route?.lang[key].replace(/\//g, '');
+      const locales = route.lang;
+      Object.keys(locales).forEach((locale) => {
+        const srcRoute = locales[locale].replace(/\//g, '');
         const dstRoute = route.path.replace(/(\/?)(.*)/, '$2');
-        const prefix = key !== defaultLocale ? `/${key}` : '';
+        const prefix = locale !== defaultLocale ? `/${locale}` : '';
         const rewrite: TRewrite = {
           source: `${prefix}/${srcRoute}`,
           destination: `${prefix}/${dstRoute}`,
