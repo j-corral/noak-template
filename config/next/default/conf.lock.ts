@@ -4,6 +4,7 @@ import NextHeaders from './headers';
 import NextRedirects from './redirects';
 import NextRewrites from './rewrites';
 import NextImageDomains from './images';
+import NextCompiler from './compiler';
 
 const DefaultNextConf = {
   // https://nextjs.org/docs/api-reference/next.config.js/react-strict-mode
@@ -14,6 +15,8 @@ const DefaultNextConf = {
 
   // unstable features
   experimental: NextExperimental,
+
+  compiler: NextCompiler,
 
   // https://nextjs.org/docs/api-reference/next.config.js/headers
   async headers() {
